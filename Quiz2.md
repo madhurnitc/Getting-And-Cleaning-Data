@@ -65,6 +65,6 @@ Original source of the data: http://www.cpc.ncep.noaa.gov/data/indices/wksst8110
 ```R
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for",destfile = "Ques5.csv")
 data <- read.csv("Ques5.csv", header = TRUE)
-df <- read.fwf(file="Ques5.csv",widths=c(-1,9,-5,4,4,-5,4,4,-5,4,4,-5,4,4), skip=4)sum(df[, 4])
+df <- read.fwf(file="Ques5.csv",widths=c(-1,9,-5,4,4,-5,4,4,-5,4,4,-5,4,4), skip=4)
 sum(df[, 4])
 ```
